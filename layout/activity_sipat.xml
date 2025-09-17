@@ -1,0 +1,783 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Telas.SIPAT">
+
+        <LinearLayout
+            android:id="@+id/ll_sipat_titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/tv_sipat_cipa_mais"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="25dp"
+                android:gravity="center"
+                android:text="@string/app_name"
+                android:textColor="@color/textColor"
+                android:textSize="36sp"
+                android:transitionName="textoProfile"/>
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/cipa"
+                android:transitionName="imagemProfile"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_sipat_cipa_mais_I"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="@string/semana_interna_de_preven_o_de_nacidentes_no_trabalho"
+            android:textAlignment="center"
+            android:textColor="@color/textColor"
+            android:textSize="26sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ll_sipat_titulo" />
+
+        <LinearLayout
+            android:id="@+id/ll_sipat_descricao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/bg_lista_usuarios"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_sipat_cipa_mais_I"
+            tools:ignore="WebViewLayout">
+
+            <WebView
+                android:id="@+id/wv_sipat_descricao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/bg_lista_usuarios"
+                android:gravity="center"
+                android:padding="6dp"
+                android:text="@string/pagina_de_atualizacao_da_sipat"
+                android:textColor="@color/textColorDois"
+                android:textSize="22sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:background="@drawable/bg_lista_usuarios"
+                android:orientation="vertical"
+                android:padding="6dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:text="@string/tema_do_1_dia"
+                    android:textColor="@color/textColor"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/et_sipat_tema_i"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/bg_lista_usuarios"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:text="@string/local"
+                    android:textColor="@color/textColor"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/et_sipat_local_i"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/bg_lista_usuarios"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:text="@string/dia_e_horario"
+                    android:textColor="@color/textColor"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/et_sipat_dia_i"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/bg_lista_usuarios"
+                    android:gravity="center" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:background="@drawable/bg_lista_usuarios"
+                android:orientation="vertical"
+                android:padding="6dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:text="@string/tema_do_2_dia"
+                    android:textColor="@color/textColor"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/et_sipat_tema_ii"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/bg_lista_usuarios"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:text="@string/local"
+                    android:textColor="@color/textColor"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/et_sipat_local_ii"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/bg_lista_usuarios"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:text="@string/dia_e_horario"
+                    android:textColor="@color/textColor"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/et_sipat_dia_ii"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/bg_lista_usuarios"
+                    android:gravity="center" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:background="@drawable/bg_lista_usuarios"
+                android:orientation="vertical"
+                android:padding="6dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:text="@string/tema_do_3_dia"
+                    android:textColor="@color/textColor"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/et_sipat_tema_iii"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/bg_lista_usuarios"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:text="@string/local"
+                    android:textColor="@color/textColor"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/et_sipat_local_iii"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/bg_lista_usuarios"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:text="@string/dia_e_horario"
+                    android:textColor="@color/textColor"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/et_sipat_dia_iii"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/bg_lista_usuarios"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:background="@drawable/bg_lista_usuarios"
+                android:orientation="vertical"
+                android:padding="6dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:text="@string/tema_do_4_dia"
+                    android:textColor="@color/textColor"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/et_sipat_tema_iv"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/bg_lista_usuarios"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:text="@string/local"
+                    android:textColor="@color/textColor"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/et_sipat_local_iv"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/bg_lista_usuarios"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:text="@string/dia_e_horario"
+                    android:textColor="@color/textColor"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/et_sipat_dia_iv"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/bg_lista_usuarios"
+                    android:gravity="center" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:background="@drawable/bg_lista_usuarios"
+                android:orientation="vertical"
+                android:padding="6dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:text="@string/tema_do_5_dia"
+                    android:textColor="@color/textColor"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/et_sipat_tema_v"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/bg_lista_usuarios"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:text="@string/local"
+                    android:textColor="@color/textColor"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/et_sipat_local_v"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/bg_lista_usuarios"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:text="@string/dia_e_horario"
+                    android:textColor="@color/textColor"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/et_sipat_dia_v"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/bg_lista_usuarios"
+                    android:gravity="center" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="6dp"
+                android:background="@drawable/bg_lista_usuarios"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="6dp">
+
+                <Button
+                    android:id="@+id/btn_sipat_limpar_temas"
+                    style="@style/Button_Cipa_Menu_sw320dp"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="20dp"
+                    android:gravity="center"
+                    android:text="@string/limpar_temas_e_imagem" />
+
+                <Button
+                    android:id="@+id/btn_sipat_obter_imagem"
+                    style="@style/Button_Cipa_Menu_sw320dp"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="20dp"
+                    android:gravity="center"
+                    android:text="@string/obter_imagem_da_galeria" />
+
+                <Button
+                    android:id="@+id/btn_sipat_atualizar_tema"
+                    style="@style/Button_Cipa_Menu_sw320dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/atualizar_temas_e_imagem" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/ll_sipat_descricao">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="8dp"
+                android:text="@string/participe"
+                android:textColor="@color/textColor"
+                android:textSize="22sp" />
+
+            <ImageView
+                android:id="@+id/iv_sipat_cabecalho"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:contentDescription="@string/descricao_imagem_sipat"
+                android:padding="6dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:background="@drawable/bg_lista_usuarios"
+                android:orientation="vertical"
+                android:padding="6dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:gravity="start"
+                    android:padding="6dp"
+                    android:text="@string/tema_do_1_dia"
+                    android:textColor="@color/textColorDois"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_sipat_tema_i"
+                    style="@style/sipat_tema" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:gravity="start"
+                    android:padding="6dp"
+                    android:text="@string/local"
+                    android:textColor="@color/textColorDois"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_sipat_local_i"
+                    style="@style/sipat_local_horario" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:gravity="start"
+                    android:padding="6dp"
+                    android:text="@string/dia_e_horario"
+                    android:textColor="@color/textColorDois"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_sipat_dia_i"
+                    style="@style/sipat_local_horario" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:background="@drawable/bg_lista_usuarios"
+                android:orientation="vertical"
+                android:padding="6dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:gravity="start"
+                    android:padding="6dp"
+                    android:text="@string/tema_do_2_dia"
+                    android:textColor="@color/textColorDois"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_sipat_tema_ii"
+                    style="@style/sipat_tema" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:gravity="start"
+                    android:padding="6dp"
+                    android:text="@string/local"
+                    android:textColor="@color/textColorDois"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_sipat_local_ii"
+                    style="@style/sipat_local_horario" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:gravity="start"
+                    android:padding="6dp"
+                    android:text="@string/dia_e_horario"
+                    android:textColor="@color/textColorDois"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_sipat_dia_ii"
+                    style="@style/sipat_local_horario" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:background="@drawable/bg_lista_usuarios"
+                android:orientation="vertical"
+                android:padding="6dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:gravity="start"
+                    android:padding="6dp"
+                    android:text="@string/tema_do_3_dia"
+                    android:textColor="@color/textColorDois"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_sipat_tema_iii"
+                    style="@style/sipat_tema" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:gravity="start"
+                    android:padding="6dp"
+                    android:text="@string/local"
+                    android:textColor="@color/textColorDois"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_sipat_local_iii"
+                    style="@style/sipat_local_horario" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:gravity="start"
+                    android:padding="6dp"
+                    android:text="@string/dia_e_horario"
+                    android:textColor="@color/textColorDois"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_sipat_dia_iii"
+                    style="@style/sipat_local_horario" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:background="@drawable/bg_lista_usuarios"
+                android:orientation="vertical"
+                android:padding="6dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:gravity="start"
+                    android:padding="6dp"
+                    android:text="@string/tema_do_4_dia"
+                    android:textColor="@color/textColorDois"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_sipat_tema_iv"
+                    style="@style/sipat_tema" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:gravity="start"
+                    android:padding="6dp"
+                    android:text="@string/local"
+                    android:textColor="@color/textColorDois"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_sipat_local_iv"
+                    style="@style/sipat_local_horario" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:gravity="start"
+                    android:padding="6dp"
+                    android:text="@string/dia_e_horario"
+                    android:textColor="@color/textColorDois"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_sipat_dia_iv"
+                    style="@style/sipat_local_horario" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:background="@drawable/bg_lista_usuarios"
+                android:orientation="vertical"
+                android:padding="6dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:gravity="start"
+                    android:padding="6dp"
+                    android:text="@string/tema_do_5_dia"
+                    android:textColor="@color/textColorDois"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_sipat_tema_v"
+                    style="@style/sipat_tema" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:gravity="start"
+                    android:padding="6dp"
+                    android:text="@string/local"
+                    android:textColor="@color/textColorDois"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_sipat_local_v"
+                    style="@style/sipat_local_horario" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:gravity="start"
+                    android:padding="6dp"
+                    android:text="@string/dia_e_horario"
+                    android:textColor="@color/textColorDois"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_sipat_dia_v"
+                    style="@style/sipat_local_horario" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            app:layout_constraintBottom_toTopOf="@+id/ll_sipat_design"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout6">
+
+            <Button
+                android:id="@+id/btn_sipat_cadastrar"
+                style="@style/Button_Cipa_Menu_sw320dp"
+                android:layout_marginEnd="20dp"
+                android:text="@string/cadastrar" />
+
+            <Button
+                android:id="@+id/btn_sipat_voltar"
+                style="@style/Button_Cipa_Menu_sw320dp"
+                android:layout_marginEnd="20dp"
+                android:text="@string/voltar" />
+
+            <Button
+                android:id="@+id/btn_sipat_sair"
+                style="@style/Button_Cipa_Menu_sw320dp"
+                android:text="@string/sair" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_sipat_design"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:id="@+id/tv_produtoByTechnet"
+                style="@style/by_technet" />
+
+            <TextView
+                android:id="@+id/tv_versao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/versao_1_0"
+                android:textAlignment="center"
+                android:textColor="@color/textColor"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

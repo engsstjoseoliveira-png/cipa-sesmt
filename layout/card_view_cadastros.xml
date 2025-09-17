@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="6dp"
+    app:cardCornerRadius="6dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="6dp"
+        android:layout_margin="6dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="6dp"
+            android:background="@drawable/bg_cipa">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civ_foto_cadastros"
+            android:layout_width="120dp"
+            android:layout_height="130dp"
+            android:src="@drawable/baseline_person_3_24"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/textColor" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_toEndOf="@+id/civ_foto_cadastros"
+                android:background="@drawable/bg_cipa_botoes"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_cadastros_nome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/nome"
+                    android:textColor="@color/textColor"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_cadastros_presidencia"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/presidencia"
+                    android:textColor="@color/textColor"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_cadastros_ocupacao"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/ocupacao"
+                    android:textColor="@color/textColor"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_cadastros_posicao"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/posicao"
+                    android:textColor="@color/textColor"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_cadastros_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/email"
+                    android:textColor="@color/textColor"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_cadastros_gestao"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/gestao"
+                    android:textColor="@color/textColor"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout4"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:padding="6dp"
+            android:orientation="horizontal"
+            android:background="@drawable/bg_cipa_botoes">
+
+            <Button
+                android:id="@+id/btn_cvc_editar_sesmt"
+                style="@style/Button_Cipa_Editar_sw320dp"
+                android:text="SESMT" />
+
+            <Button
+                android:id="@+id/btn_cvc_editar_cipeiro"
+                style="@style/Button_Cipa_Editar_sw320dp"
+                android:layout_marginStart="8dp"
+                android:text="CIPA" />
+
+            <Button
+                android:id="@+id/btn_cvc_editar_colaborador"
+                style="@style/Button_Cipa_Editar_sw320dp"
+                android:layout_marginStart="8dp"
+                android:text="Colaborador" />
+
+            <Button
+                android:id="@+id/btn_cvc_excluir"
+                style="@style/Button_Cipa_Editar_sw320dp"
+                android:layout_marginStart="8dp"
+                android:text="Excluir" />
+
+
+        </LinearLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

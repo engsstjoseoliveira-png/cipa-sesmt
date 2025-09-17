@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home.Splash">
+
+    <LinearLayout
+        android:id="@+id/ll_splash_cipa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ll_splash_design"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+        <ImageView
+            android:id="@+id/iv_cipa"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/cipa"
+            android:transitionName="imagemProfile"/>
+
+        <TextView
+            android:id="@+id/tv_cipa_mais"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/textColor"
+            android:textSize="48sp"
+            android:textStyle="bold"
+            android:transitionName="textoProfile"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_splash_design"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tv_produtoByTechnet"
+            style="@style/by_technet" />
+
+        <TextView
+            android:id="@+id/tv_versao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/versao_1_0"
+            android:textAlignment="center"
+            android:textColor="@color/textColor"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Telas.Indice_de_acidentes">
+
+        <LinearLayout
+            android:id="@+id/ll_indice_titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/tv_indice_cipa_mais"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="25dp"
+                android:gravity="center"
+                android:text="@string/app_name"
+                android:textColor="@color/textColor"
+                android:textSize="36sp"
+                android:transitionName="textoProfile"/>
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/cipa"
+                android:transitionName="imagemProfile"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_indice_de_acidentes_cipa_mais_I"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="@string/texto_cipa"
+            android:textAlignment="center"
+            android:textColor="@color/textColor"
+            android:textSize="26sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ll_indice_titulo" />
+
+        <LinearLayout
+            android:id="@+id/ll_indice_de_acidentes_indice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/placa_indice"
+            android:orientation="vertical"
+            android:padding="4dp"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+            app:layout_constraintTop_toBottomOf="@+id/tv_indice_de_acidentes_cipa_mais_I"
+            tools:layout_editor_absoluteX="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/estamos_trabalhando"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/textColor"
+                android:textSize="22sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="4dp">
+
+                <TextView
+                    android:id="@+id/tv_indice_de_acidentes_dias"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_margin="4dp"
+                    android:text=""
+                    android:textAllCaps="true"
+                    android:textColor="@color/textColor"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="4dp">
+
+                <TextView
+                    android:id="@+id/tv_indice_de_acidentes_recorde"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_margin="4dp"
+                    android:text=""
+                    android:textAllCaps="true"
+                    android:textColor="@color/textColor"
+                    android:textSize="22sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/placa_colabore"
+                android:orientation="horizontal"
+                android:padding="4dp"
+                android:gravity="center">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/civ_foto_dds"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:src="@drawable/cipa_mais"
+                    app:civ_border_color="@color/textColor"
+                    app:civ_border_width="2dp"/>
+
+                <TextView
+                    android:id="@+id/tv_indice_de_acidentes_colabore"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/colabore_para_melhorar_esse_indice"
+                    android:gravity="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="26sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            app:layout_constraintBottom_toTopOf="@+id/ll_indice_de_acidentes_design"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <Button
+                android:id="@+id/btn_indice_de_acidentes_cadastrar"
+                style="@style/Button_Cipa_Menu_sw320dp"
+                android:layout_marginEnd="30dp"
+                android:text="@string/cadastrar" />
+
+            <Button
+                android:id="@+id/btn_indice_de_acidentes_voltar"
+                style="@style/Button_Cipa_Menu_sw320dp"
+                android:layout_marginEnd="30dp"
+                android:text="@string/voltar" />
+
+            <Button
+                android:id="@+id/btn_indice_de_acidentes_sair"
+                style="@style/Button_Cipa_Menu_sw320dp"
+                android:text="@string/sair" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_indice_de_acidentes_design"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:id="@+id/tv_produtoByTechnet"
+                style="@style/by_technet" />
+
+            <TextView
+                android:id="@+id/tv_versao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/versao_1_0"
+                android:textAlignment="center"
+                android:textColor="@color/textColor"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

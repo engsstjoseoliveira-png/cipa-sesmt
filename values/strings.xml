@@ -1,0 +1,302 @@
+<resources>
+    <string name="app_name">CIPA + A</string>
+    <string name="ja_sou_cadastrado">Já sou cadastrado</string>
+    <string name="quero_me_cadastrar">Quero me cadastrar</string>
+    <string name="entrar_como_visitante">Entrar como visitante</string>
+    <string name="title_activity_login">Login</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="sair">Sair</string>
+    <string name="versao_1_0">Versão 1.0</string>
+    <string name="texto_cipa">Comissão Interna de Prevenção\nde Acidentes e de Assédio</string>
+
+    <string name="dica_diaria_de_seguranca_um">Participe das campanhas e dos treinamentos fornecidos
+        pela organização. As campanhas e os treinamentos visam capacitar os colaboradores,
+        assegurando que todos tenham conhecimento dos perigos e dos riscos a que estão expostos.
+    </string>
+
+    <string name="dica_diaria_de_seguranca_doisdois">Lembre-se: você está no controle, você manda nas
+    máquinas! Apesar da tecnologia, o controle estar em suas mãos. Possuir o controle das máquinas
+    é também fundamental para garantir um ambiente livre de acidentes de trabalho.</string>
+
+    <string name="dica_diaria_de_seguranca_tres">O perigo de incêndio nos rodeia diariamente.
+        Verifique se os extintores de incêndio de seu departamento atendem as exigências legais, se
+        são adequados para o seu ambiente e se estão dentro da validade. Pode pedir ajuda de um
+        especialista da DSST se preferir. Lembre-se, em caso de incêndio, não corra, ande!
+    </string>
+
+    <string name="dica_diaria_de_seguranca_quatro">Já pensou em ser um cipeiro? Os membros da CIPA + A
+        reunem-se mensalmente para discutir questões de segurança e saúde ocupacional. Ser um membro
+        da CIPA + A é um privilégio! Saiba mais sobre como ser um cipeiro e participe da próxima eleição.
+    </string>
+
+    <string name="dica_diaria_de_seguranca_cinco">Você é o Fiscal! Sabia que um piso molhado pode
+        causar sérios acidentes? Pois é, muitos profissionais acabam sofrendo acidentes de trabalho
+        justamente pela falta de sinalização que seja capaz de orientá-los com relação aos locais
+        com riscos em potencial. Sabe-se, por exemplo, que uma área que está sendo limpada com água
+        pode levar uma pessoa a escorregar, sinalize essa região, para que ele fique esperto.
+    </string>
+
+    <string name="dica_diaria_de_seguranca_seis">Lembre-se que o conforto no ambiente de trabalho
+        também é importante. O conforto está diretamente relacionado à saúde física e mental do
+        trabalhador. Portanto, reinvindique soluções que façam com que a seu ambiente laboral se
+        torne um local confortável. Neste sentido, pode-se destacar, por exemplo, cadeiras
+        confortáveis e adaptáveis à sua estatura e tamanho.
+    </string>
+
+    <string name="dica_sete">Não brinque em serviço. O trabalho não é lugar para distrações.
+    Embora possa parecer legal, descolado etc., as brincadeiras no ambiente de trabalho podem gerar
+    desconfortos e até incidentes graves. Fique atento!</string>
+
+    <string name="dica_diaria_de_seguranca_oito">E se você se deparar com um acidente no seu local
+        de trabalho, o que fazer? Pois é, muitas pessoas não saberiam responder a essa questão.
+        É importante saber que, em primeiro lugar, ao se deparar com um acidente, certificar-se de
+        que você está seguro, só então procurar ajudar as outras pessoas. Veja um exemplo:
+        quando você viaja de avião e a aeromoça está repassando as instruções, ela fala para você
+        colocar as máscaras de oxigênio primeiramente em você, (né?) para só então ajudar aos outros,
+        pois bem, primeiramente sua segurança. Lembre-se disso!
+    </string>
+
+    <string name="dica_diaria_de_seguranca_nove">Observe seu ambiente de trabalho quanto às condições
+        de mobiliários, instalações elétricas, estruturas. Um ambiente saudável começa com um ambiente
+        seguro e limpo. Cobre seus superiores para realizar as adequações e manutenções necessárias.
+        Caso prefira, você pode usar a seção Sugestões para encaminhar sua solicitação.
+    </string>
+
+    <string name="dica_diaria_de_seguranca_dez">Não tenha pressa nas rotinas de trabalho.
+        Ela é inimiga da segurança. Deve-se fazer o trabalho, observando, é claro, a produtividade,
+        o alcance das metas, mas sem atropelar as normas de segurança do trabalho.
+    </string>
+
+    <string name="dica_diaria_de_seguranca_onze">Gambiarra? Nem pensar! Evite todo tipo de improvisações.
+        Muitas vezes, elas prejudicam a segurança e podem causar acidentes graves de trabalho.
+    </string>
+
+    <string name="dica_diaria_de_seguranca_doze">Regras existem para serem… seguidas! Siga sempre às
+        normas internas de segurança e esteja atento(a) à sinalização do ambiente de trabalho.
+        Lembre-se: essas normas existem para sua proteção e integridade.
+    </string>
+
+    <string name="e_mail">E-mail</string>
+    <string name="senha">Senha</string>
+    <string name="entrar">Entrar</string>
+    <string name="voltar">Voltar</string>
+    <string name="membros_da_cipa">Membros da\n CIPA</string>
+    <string name="membros_do_sesmt">Membros do\n SESMT</string>
+    <string name="conheca_a_sipat">Conheça a\nSIPAT</string>
+    <string name="conheca_sua_empresa">Conheça sua\nEmpresa</string>
+    <string name="saiba_mais_sobre_sst">Saiba Mais\nSobre SST</string>
+    <string name="dica_diaria_de_seguranca">Dica Diária de Segurança</string>
+    <string name="membros">Membros</string>
+    <string name="reunioes">Reuniões</string>
+    <string name="atribuioes">Atribuições</string>
+    <string name="seja_um_cipeiro">Seja um Cipeiro</string>
+    <string name="sugestoes">Sugestões</string>
+    <string name="sesmt">SESMT</string>
+    <string name="cipa_mais">CIPA+</string>
+    <string name="sipat">SIPAT</string>
+    <string name="sua_empresa">SUA EMPRESA</string>
+    <string name="indice_de_acidentes">Índice de Acidentes</string>
+    <string name="grau_de_risco">Grau de Risco</string>
+    <string name="fique_por_dentro">Fique por Dentro</string>
+    <string name="cipa_texto_2">Comissão Interna de\nPrevenção de Acidentes\ne de Assédio</string>
+    <string name="action_settings">Action Settings</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="conheca_a_ncipa">Conheça a\nCIPA+</string>
+    <string name="conheca_o_nsesmt">Conheça o\nSESMT</string>
+    <string name="saiba_mais_nsobre_a_sipat">Saiba mais\nsobre a SIPAT</string>
+    <string name="conheca_sua_nempresa">Conheça sua\nempresa</string>
+    <string name="fique_por_ndentro_da_sst">Fique por\ndentro da SST</string>
+    <string name="dica_diaria_nde_seguranca">Dica Diária\nde Segurança</string>
+    <string name="seja_um_ncipeiro">Seja um\nCIPEIRO</string>
+    <string name="envie_sua_nsugestao">Envie sua\nSUGESTÃO</string>
+    <string name="semana_interna_de_preven_o_de_nacidentes_no_trabalho">Semana Interna de Prevenção de\nAcidentes no Trabalho</string>
+    <string name="texto_sipat">Na Semana Interna de Prevenção de Acidentes no Trabalho (SIPAT) são promovidos
+        eventos e atividades pela empresa, como palestras, workshops, dinâmicas de grupo e demonstrações práticas,
+        todas voltadas para promover a segurança e saúde no ambiente de trabalho.</string>
+    <string name="participe">Participe:</string>
+    <string name="agradecemos_a_visita">Agradecemos a visita</string>
+    <string name="colabore_para_melhorar_esse_indice">colabore para melhorar esse índice</string>
+    <string name="cadastrar">Cadastrar</string>
+    <string name="nome">Nome</string>
+    <string name="posicao">Posição</string>
+    <string name="email">Email</string>
+    <string name="ocupacao">Ocupação</string>
+    <string name="presidente_da_cipa">Presidente da CIPA</string>
+    <string name="gestao">Gestão</string>
+    <string name="editar_cadastro">Editar Cadastro</string>
+    <string name="excluir_cadastro">Excluir Cadastro</string>
+    <string name="detalhes_do_cadastro">Detalhes do Cadastro</string>
+    <string name="foto">Foto</string>
+    <string name="atualizar">Atualizar</string>
+    <string name="cadastro_de_cipeiros">Cadastro de Cipeiros</string>
+    <string name="pagina_para_cadastro_de_colaborador">Página para cadastro de Colaborador</string>
+    <string name="pagina_de_cadastro_dos_membros_do_sesmt">Página de cadastro dos\nMembros do SESMT</string>
+    <string name="pagina_de_cadastro_dos_membros_da_cipa">Página de cadastro dos\nMembros da CIPA</string>
+    <string name="presidencia">Presidência</string>
+    <string name="pagina_de_cadastro_da_presidencia_da_cipa">Página de cadastro da\nPresidência da CIPA</string>
+    <string name="funcao">Função</string>
+    <string name="membros_do_sesmt_">Membros do SESMT</string>
+    <string name="distribuicao_sesmt">1 - Chefe de Divisão\n2 - Engenheiro de Segurança do
+        Trabalho\n3 - Técnico de Segurança do Trabalho\n\nHorário de atendimento: das 08h00 às
+        17h00\nTelefone: 19 0000 0000\nE-mail: seu_email_aqui@sua_empresa_aqui</string>
+    <string name="gerenciar_cadastros">Gerenciar\ncadastros</string>
+    <string name="gerenciar_a_cipa">Gerenciar a\nCIPA+</string>
+    <string name="gerenciar_o_sesmt">Gerenciar o\nSESMT</string>
+    <string name="gerenciar_a_sipat">Gerenciar a\nSIPAT</string>
+    <string name="gerenciar_dados_da_empresa">Gerenciar dados\nda Empresa</string>
+    <string name="gerenciar_sugestoes">Gerenciar\nsugestões</string>
+    <string name="gerenciar_indice_de_acidentes">Gerenciar Índice de Acidentes</string>
+    <string name="cnpj">CNPJ</string>
+    <string name="razao_social">Razão Social</string>
+    <string name="tipo_matriz_filial">Tipo: Matriz/Filial</string>
+    <string name="imagem_da_galeria">Imagem da Galeria</string>
+    <string name="foto_da_camera">Foto da Câmera</string>
+    <string name="nome_fantasia">Nome Fantasia</string>
+    <string name="situacao_cadastral">Situação Cadastral</string>
+    <string name="inicio_das_atividades">Início das Atividades</string>
+    <string name="endereco">Endereço</string>
+    <string name="cep">CEP</string>
+    <string name="telefone">Telefone</string>
+    <string name="cnae">CNAE</string>
+    <string name="descricao_das_atividades">Descrição das Atividades</string>
+    <string name="cadastrar_empresa">Cadastrar Empresa</string>
+    <string name="administrador">Administrador</string>
+    <string name="dica_de_seguranca">Dica de Segurança</string>
+    <string name="veja_outra_dica_de_seguranca">outra dica de segurança</string>
+    <string name="text">Tema Escuro</string>
+    <string name="estamos_trabalhando">estamos trabalhando</string>
+    <string name="ha">há</string>
+    <string name="dias_sem_acidentes">dias sem acidentes</string>
+    <string name="nosso_recorde_de">nosso recorde é de</string>
+    <string name="dias">dias</string>
+    <string name="engenheiro_de_seguranca_do_trabalho">Engenheiro de Segurança do Trabalho</string>
+    <string name="tecnico_de_seguranca_do_trabalho">Técnico de Segurança do Trabalho</string>
+    <string name="horario_de_atendimento">Horário de Atendendimento: 08h às 17h\nTelefone:
+        19 0000 0000\nE-mail: seu_email_aqui@sua_empresa_aqui</string>
+    <string name="envie_uma_sugestao_para_o_sesmt_cipa_a">Envie uma sugestão para o SESMT/CIPA+A</string>
+    <string name="li_e_aceito_os_termos">Li e concordo com os termos acima</string>
+    <string name="termo_de_aceite">Declaro que tomei ciência da íntegra do Termo de Aceite, e concordo
+        em testar e avaliar o aplicativo CIPA+A, responder, de forma anônima e imparcial, o questionário proposto.</string>
+    <string name="termo_de_aceite_activity">1. Ao aceitar o presente Termo, o usuário concorda
+        em participar de uma pesquisa de avaliação, respondendo, após instalar e testar o aplicativo
+        CIPA+A, podendo ser de forma anônima, porém, imparcial, o questionário proposto. Fica ciente
+        de que seus dados pessoais não serão utilizados para quaisquer finalidades além dos própositos
+        desta pesquisa, assim como não haverá disponibilidade ou tratamento de seus dados pessoais,
+        envolvendo operações como as que se referem à coleta, produção, recepção, classificação, utilização,
+        acesso, reprodução, transmissão, distribuição, processamento, arquivamento, armazenamento, avaliação
+        ou controle da informação, modificação, comunicação, transferência, difusão ou extração.
+        \n2. Fica ciente de que os dados a seguir são indispensáveis ao cadastro de usuário, podendo
+        utilizar pseunônimo e e-mail não cadastrado:
+        \n– Nome completo (pode ser pseunônimo).
+        \n– Ocupação.
+        \n– E-mail (pode ser e-mail não cadastrado).</string>
+    <string name="para_conhecimento_do_termo_de_aceite">Para Conhecimento do Termo de Uso</string>
+    <string name="clique_aqui">Clique Aqui</string>
+    <string name="quer_ser_um_cipeiro_i">Quer ser um cipeiro?</string>
+    <string name="vantagem_de_ser_cipeiro_i">Confira algumas vantagens de ser um Membro
+        da Comissão Interna de Prevenção de Acidentes e de Assédios - CIPA + A:</string>
+
+    <string name="quer_ser_um_cipeiro_ii">Estabilidade no emprego</string>
+    <string name="vantagem_de_ser_cipeiro_ii">Os membros da CIPA têm estabilidade provisória durante
+        o mandato e até um ano após o seu término.</string>
+
+    <string name="quer_ser_um_cipeiro_iii">Vedação à transferência</string>
+    <string name="vantagem_de_ser_cipeiro_iii">Os membros da CIPA não podem ser transferidos sem o seu
+        consentimento, com algumas exceções.</string>
+
+    <string name="quer_ser_um_cipeiro_iv">Treinamentos</string>
+    <string name="vantagem_de_ser_cipeiro_iv">Os membros da CIPA recebem treinamentos antes de assumir
+        as suas funções, o que os torna mais conscientes e aptos a identificar riscos.</string>
+
+    <string name="quer_ser_um_cipeiro_v">Oportunidade de aprendizado</string>
+    <string name="vantagem_de_ser_cipeiro_v">Os membros da CIPA têm a oportunidade de aprender sobre
+        diferentes aspectos da empresa, como saúde, segurança e processos internos.</string>
+
+    <string name="quer_ser_um_cipeiro_vi">Contribuir para a segurança e saúde dos funcionários</string>
+    <string name="vantagem_de_ser_cipeiro_vi">A CIPA é fundamental para promover a segurança e a saúde
+        dos funcionários, reduzindo o risco de acidentes e doenças ocupacionais. </string>
+
+    <string name="quer_ser_um_cipeiro_vii">Ser um profissional conceituado</string>
+    <string name="vantagem_de_ser_cipeiro_vii">A CIPA é uma atividade fundamental para o quadro de
+        funcionários, que exerce um papel importante na segurança e saúde dos mesmos.</string>
+    <string name="esqueci_a_senha">Esqueci a Senha</string>
+    <string name="o_mandato_da_cipa_a_de_2_anos">O Mandato da CIPA + A é de 2 anos</string>
+    <string name="a_atual_gestao_vai_ate_31_12_2024">A atual Gestão vai até 31/12/2024</string>
+    <string name="a_proxima_eleico_da_cipa_a_esta_prevista_para">A próxima Eleição da CIPA está prevista para:</string>
+    <string name="_01_12_2024">01/12/2024</string>
+    <string name="membros_da_cipa_a">Membros da CIPA + A</string>
+
+    <string name="o_que_e_sst_i">SST é a sigla para Saúde e Segurança do Trabalho, um conjunto de normas,
+        procedimentos e diretrizes que visam tornar o ambiente de trabalho mais seguro e saudável.
+        O objetivo da SST é reduzir o número de acidentes e doenças relacionadas ao trabalho, protegendo
+        a integridade, a vida e a saúde dos trabalhadores. A SST é uma obrigação legal para todas as
+        empresas, de acordo com o artigo 162 da Consolidação das Leis do Trabalho (CLT).
+        As empresas devem manter serviços especializados em segurança e medicina do trabalho, de
+        acordo com as normas do Ministério do Trabalho (MT).</string>
+
+    <string name="o_que_e_sst_ii">A SST tem duas partes principais:</string>
+    <string name="o_que_e_sst_iii">Segurança do trabalho</string>
+    <string name="o_que_e_sst_iv">Identifica riscos ocupacionais e sugere e implementa adequações nos postos de trabalho.</string>
+    <string name="o_que_e_sst_v">Saúde</string>
+    <string name="o_que_e_sst_vi">Monitora a condição física e mental dos colaboradores para evitar adoecimentos.</string>
+    <string name="o_que_e_sst_vii">Os Auditores-Fiscais do Trabalho são responsáveis por fiscalizar
+        o cumprimento das Normas Regulamentadoras de SST (NR).</string>
+    <string name="sugestao_reclamacao_elogio">Sugestão/reclamação/elogio</string>
+    <string name="assunto">Assunto</string>
+    <string name="mensagem">Mensagem</string>
+    <string name="obter_imagem_da_camera">Obter Imagem\nda Câmera</string>
+    <string name="obter_imagem_da_galeria">Obter Imagem\nda Galeria</string>
+    <string name="dia">Dia</string>
+    <string name="tema">Tema:</string>
+    <string name="editar_tema">Editar tema</string>
+    <string name="editar_dia">Editar dia</string>
+    <string name="pagina_de_atualizacao_da_sipat">Página de atualização da SIPAT</string>
+    <string name="dia_e_horario">Dia e horário</string>
+    <string name="local">Local</string>
+    <string name="tema_do_1_dia">Tema do 1º dia</string>
+    <string name="tema_do_2_dia">Tema do 2º dia</string>
+    <string name="tema_do_3_dia">Tema do 3º dia</string>
+    <string name="tema_do_4_dia">Tema do 4º dia</string>
+    <string name="tema_do_5_dia">Tema do 5º dia</string>
+    <string name="descricao_imagem_sipat">cinco imagens circulares</string>
+    <string name="atualizar_temas">Atualizar temas</string>
+    <string name="limpar_temas">Limpar temas</string>
+    <string name="limpar_imagem">Limpar imagem</string>
+    <string name="limpar_temas_e_imagem">Limpar Temas\ne Imagem</string>
+    <string name="atualizar_temas_e_imagem">Atualizar Temas\ne Imagem</string>
+    <string name="customize">Customize</string>
+    <string name="editar_descricao_da_cipa">Editar descrição da CIPA</string>
+    <string name="editar_descricao_do_sesmt">Editar descrição do SESMT</string>
+    <string name="limpar_descricao">Limpar Descrição</string>
+    <string name="editar_descricao">Editar Descrição</string>
+    <string name="atualizar_descricao">Atualizar Descrição</string>
+    <string name="temas">temas</string>
+    <string name="pagina_de_atualizacao">Página de atualização</string>
+    <string name="seja_um_cipeiro_as_inscricoes_estao_abertas">Seja um cipeiro as inscrições estão abertas</string>
+    <string name="periodo_de_inscricoes">Período de inscrições:</string>
+    <string name="editar_periodo">Editar período de eleição</string>
+    <string name="habilitar_periodo_de_eleicao">Habilitar período de eleição</string>
+    <string name="periodo">Período</string>
+    <string name="data">Data</string>
+    <string name="gerenciar">Gerenciar</string>
+    <string name="medico_do_trabalho">Médico do Trabalho</string>
+    <string name="clique_na_imagem_para_acessar_a_pagina">Clique na imagem para acessar a página ou</string>
+    <string name="deslize_para_acessar_outras_paginas"><![CDATA[<<< Deslize para acessar outras páginas >>>]]></string>
+    <string name="responder_pesquisa">Responder Pesquisa</string>
+    <string name="sensorEncontrado">Sensor Encontrado</string>
+    <string name="sensorNaoEncontrado">Sensor não Encontrado</string>
+    <string name="sensorIndisponivel">Sensor Indisponível</string>
+    <string name="sensorEncontradoNaoCadastrado">Sensor Encontrado Não Cadastrado\n</string>
+    <string name="erroLeitura">Erro de Leitura</string>
+    <string name="falhaLeitura">Falha na Leitura</string>
+    <string name="acertoLeitura">Leitura Realizada</string>
+
+</resources>

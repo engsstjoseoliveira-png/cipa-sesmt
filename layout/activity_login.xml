@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home.Login">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="10dp"
+        android:transitionName="imagemProfile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cipa" />
+
+    <TextView
+        android:id="@+id/tv_login_cipa_mais"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textSize="36sp"
+        android:layout_marginTop="6dp"
+        android:textColor="@color/textColor"
+        android:transitionName="textoProfile"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/tv_login_cipa_mais_I"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/texto_cipa"
+        android:textSize="26sp"
+        android:textAlignment="center"
+        android:layout_marginTop="6dp"
+        android:textColor="@color/textColor"
+        app:layout_constraintEnd_toEndOf="@+id/tv_login_cipa_mais"
+        app:layout_constraintStart_toStartOf="@+id/tv_login_cipa_mais"
+        app:layout_constraintTop_toBottomOf="@+id/tv_login_cipa_mais" />
+
+    <ProgressBar
+        android:id="@+id/pb_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_login_cipa_mais_I" />
+
+    <LinearLayout
+        android:id="@+id/ll_login_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/btn_cipa"
+        android:orientation="vertical"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pb_login">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/email">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_login_email"
+                style="@style/EditText_login"
+                android:layout_marginBottom="8dp"
+                android:drawableEnd="@drawable/baseline_email_24"
+                android:inputType="textEmailAddress" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/senha"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/colorPrimary">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_login_senha"
+                style="@style/EditText_login"
+                android:inputType="numberPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btn_login_entrar"
+            style="@style/Button_Cipa_sw320dp"
+            android:layout_marginTop="25dp"
+            android:text="@string/entrar" />
+
+        <TextView
+            android:id="@+id/tv_login_esqueci_senha"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="25dp"
+            android:padding="8dp"
+            android:text="@string/esqueci_a_senha"
+            android:textAlignment="textStart"
+            android:textColor="@color/textColor"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/ll_login_design"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_login_login">
+
+        <Button
+            android:id="@+id/btn_login_voltar"
+            style="@style/Button_Cipa_Menu_sw320dp"
+            android:layout_marginEnd="30dp"
+            android:text="@string/voltar" />
+
+        <Button
+            android:id="@+id/btn_login_sair"
+            style="@style/Button_Cipa_Menu_sw320dp"
+            android:text="@string/sair" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_login_design"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/tv_produtoByTechnet"
+            style="@style/by_technet" />
+
+        <TextView
+            android:id="@+id/tv_versao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/versao_1_0"
+            android:textAlignment="center"
+            android:textColor="@color/textColor"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

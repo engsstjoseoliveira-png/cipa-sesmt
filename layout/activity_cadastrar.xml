@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Home.Cadastrar">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/cipa" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/bg_circle_image_view"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civ_cadastrar_foto"
+            android:layout_width="0dp"
+            android:layout_height="241dp"
+            android:background="@drawable/baseline_person_3_24"
+            app:layout_constraintBottom_toBottomOf="@+id/view"
+            app:layout_constraintEnd_toEndOf="@+id/view"
+            app:layout_constraintStart_toStartOf="@+id/view"
+            app:layout_constraintTop_toTopOf="@+id/view" />
+
+        <RelativeLayout
+            android:id="@+id/ll_cadastrar_btn_imagens"
+            style="@style/EditText_login"
+            android:layout_margin="10dp"
+            android:background="@drawable/btn_cipa"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_gravity="start"
+                android:layout_marginStart="14dp"
+                android:gravity="start">
+
+                <ImageView
+                    android:id="@+id/iv_cadastrar_foto_galeria"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/baseline_photo_library_24" />
+
+                <Button
+                    android:id="@+id/btn_cadastrar_foto_galeria"
+                    style="@style/Button_Cipa_Menu_sw320dp"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/imagem_da_galeria" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="end"
+                android:layout_marginEnd="14dp"
+                android:gravity="end">
+
+                <ImageView
+                    android:id="@+id/iv_cadastrar_foto_camera"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/baseline_photo_camera_24" />
+
+                <Button
+                    android:id="@+id/btn_cadastrar_foto_camera"
+                    style="@style/Button_Cipa_Menu_sw320dp"
+                    android:text="@string/foto_da_camera" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_cadastrar_cadastrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/btn_cipa"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ll_cadastrar_btn_imagens">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/nome">
+
+            <EditText
+                android:id="@+id/et_cadastrar_nome"
+                style="@style/EditText_login"
+                android:drawableEnd="@drawable/baseline_person_24"
+                android:inputType="text"
+                app:layout_constraintEnd_toEndOf="@+id/conteinerCadastrar"
+                app:layout_constraintStart_toStartOf="@+id/conteinerCadastrar"
+                app:layout_constraintTop_toTopOf="@+id/conteinerCadastrar" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/ocupacao">
+
+            <EditText
+                android:id="@+id/et_cadastrar_ocupacao"
+                style="@style/EditText_login"
+                android:drawableEnd="@drawable/baseline_engineering_24"
+                android:inputType="text"
+                android:layout_marginTop="10dp"
+                app:layout_constraintEnd_toEndOf="@+id/conteinerCadastrar"
+                app:layout_constraintStart_toStartOf="@+id/conteinerCadastrar"
+                app:layout_constraintTop_toBottomOf="@+id/et_cadastrar_nome" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/email">
+
+            <EditText
+                android:id="@+id/et_cadastrar_email"
+                style="@style/EditText_login"
+                android:inputType="textEmailAddress"
+                android:layout_marginTop="10dp"
+                android:drawableEnd="@drawable/baseline_email_24"
+                app:layout_constraintEnd_toEndOf="@+id/conteinerCadastrar"
+                app:layout_constraintStart_toStartOf="@+id/conteinerCadastrar"
+                app:layout_constraintTop_toBottomOf="@+id/et_cadastrar_ocupacao" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/senha"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/colorPrimary">
+
+            <EditText
+                android:id="@+id/et_cadastrar_senha"
+                style="@style/EditText_login"
+                android:inputType="numberPassword"
+                android:layout_marginTop="10dp"
+                app:layout_constraintEnd_toEndOf="@+id/conteinerCadastrar"
+                app:layout_constraintStart_toStartOf="@+id/conteinerCadastrar"
+                app:layout_constraintTop_toBottomOf="@+id/et_cadastrar_email" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_cadastrar_termo_de_aceite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/btn_cipa"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ll_cadastrar_cadastrar">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:background="@drawable/btn_cipa"
+                android:paddingStart="1dip"
+                android:paddingTop="10dip"
+                android:paddingEnd="1dip"
+                android:paddingBottom="10dip">
+
+                <WebView
+                    android:id="@+id/webv_cadastrar_termo_de_aceite"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center" />
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="8dp"
+                android:background="@drawable/btn_cipa"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="6dp">
+
+                <TextView
+                    android:id="@+id/tv_cadastrar_termos_de_aceite"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/para_conhecimento_do_termo_de_aceite"
+                    android:textColor="@color/textColor"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/btn_cadastrar_termos"
+                    style="@style/Button_Cipa_Menu_sw320dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="6dp"
+                    android:text="@string/clique_aqui"
+                    android:textAllCaps="false"
+                    android:textColor="@color/textColor" />
+
+                <CheckBox
+                    android:id="@+id/cb_cadastrar_termo_de_aceite"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginBottom="6dp"
+                    android:text="@string/li_e_aceito_os_termos"
+                    android:textColor="@color/textColor"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/ll_login_design"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/btn_cadastrar_cadastrar"
+            style="@style/Button_Cipa_Menu_sw320dp"
+            android:layout_marginEnd="30dp"
+            android:text="@string/cadastrar" />
+
+        <Button
+            android:id="@+id/btn_cadastrar_voltar"
+            style="@style/Button_Cipa_Menu_sw320dp"
+            android:layout_marginEnd="30dp"
+            android:text="@string/voltar" />
+
+        <Button
+            android:id="@+id/btn_cadastrar_sair"
+            style="@style/Button_Cipa_Menu_sw320dp"
+            android:text="@string/sair" />
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_login_design"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:id="@+id/tv_produtoByTechnet"
+                style="@style/by_technet" />
+
+            <TextView
+                android:id="@+id/tv_versao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/versao_1_0"
+                android:textAlignment="center"
+                android:textColor="@color/textColor"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

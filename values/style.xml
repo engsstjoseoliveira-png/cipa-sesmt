@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Button_Cipa_sw320dp">
+        <item name="android:layout_width">260dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/btn_cipa</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="Button_home_sw320dp">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/bg_lista_usuarios</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="Button_Cipa_Editar_sw320dp">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">34dp</item>
+        <item name="android:background">@drawable/btn_cipa_menu</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="Button_Cipa_atualizar_sw320dp">
+        <item name="android:layout_width">120dp</item>
+        <item name="android:layout_height">34dp</item>
+        <item name="android:background">@drawable/bg_lista_usuarios</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="Button_Cipa_Menu_sw320dp">
+        <item name="android:layout_width">107dp</item>
+        <item name="android:layout_height">34dp</item>
+        <item name="android:background">@drawable/btn_cipa_menu</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="Button_tcle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/btn_cipa_menu</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/purple_700</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:padding">4dp</item>
+
+    </style>
+
+    <style name="by_technet">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:text">Desenvolvedor Eng. José Assis de Oliveira</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="ConteinerCadastroFoto">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:background">@drawable/conteiner_login</item>
+        <item name="android:layout_margin">20dp</item>
+
+    </style>
+
+    <style name="ConteinerCadastro">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">306dp</item>
+        <item name="android:background">@drawable/conteiner_login</item>
+        <item name="android:layout_margin">20dp</item>
+
+    </style>
+
+    <style name="ConteinerLogin">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">176dp</item>
+        <item name="android:background">@drawable/conteiner_login</item>
+        <item name="android:layout_margin">20dp</item>
+
+    </style>
+
+    <style name="ViewMenu">
+        <item name="android:layout_width">90dp</item>
+        <item name="android:layout_height">90dp</item>
+        <item name="android:background">@drawable/view_menu</item>
+        <item name="android:layout_margin">10dp</item>
+
+    </style>
+    
+    <style name="EditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/edit_text</item>
+        <item name="textColor">@color/textColor</item>
+        <item name="android:padding">20dp</item>
+        <item name="android:layout_marginLeft">40dp</item>
+        <item name="android:layout_marginRight">40dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+
+    </style>
+
+    <style name="EditText_login">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="textColor">@color/textColor</item>
+        <item name="android:background">@drawable/edit_text</item>
+        <item name="android:padding">20dp</item>
+
+    </style>
+
+    <style name="EditText_sugestoes">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="textColor">@color/textColor</item>
+        <item name="android:background">@drawable/bg_lista_usuarios</item>
+        <item name="android:padding">20dp</item>
+
+    </style>
+
+    <style name="StyleCadastro">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_marginStart">25dp</item>
+    </style>
+
+    <style name="StyleCadastroNome">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="CardViewUsuarios">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_margin">4dp</item>
+        <item name="cardCornerRadius">20dp</item>
+        <item name="cardElevation">0dp</item>
+    </style>
+
+    <style name="sipat_tema">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:background">@drawable/bg_lista_usuarios</item>
+    </style>
+
+    <style name="sipat_local_horario">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:background">@drawable/bg_lista_usuarios</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <!-- Customize your theme here. -->
+
+        <item name="android:windowContentTransitions">true</item>
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">@color/purple_200</item>
+        <item name="textColor">#000000</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="textColorPrimary">#FFFFFF</style>
+
+</resources>

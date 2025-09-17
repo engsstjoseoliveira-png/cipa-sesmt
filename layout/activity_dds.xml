@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Telas.DDS">
+
+        <LinearLayout
+            android:id="@+id/ll_dds_titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/tv_dds_mais"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="25dp"
+                android:gravity="center"
+                android:text="@string/app_name"
+                android:textColor="@color/textColor"
+                android:textSize="36sp"
+                android:transitionName="textoProfile" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:transitionName="imagemProfile"
+                app:srcCompat="@drawable/cipa" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_dds_cipa_mais_I"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/texto_cipa"
+            android:textAlignment="center"
+            android:textColor="@color/textColor"
+            android:textSize="26sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ll_dds_titulo" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/btn_cipa"
+            android:orientation="vertical"
+            android:padding="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_dds_cipa_mais_I"
+            tools:ignore="WebViewLayout">
+
+            <LinearLayout
+                android:id="@+id/ll_dds_dicas_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_cipa"
+                android:padding="8dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/civ_foto_dds"
+                    android:layout_width="115dp"
+                    android:layout_height="115dp"
+                    android:src="@drawable/baseline_person_3_24"
+                    app:civ_border_color="@color/textColor"
+                    app:civ_border_width="2dp"
+                    android:layout_gravity="center"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_dds_dicas_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="6dp"
+                    android:background="@drawable/btn_cipa"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_dds_título"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/dica_diaria_de_seguranca"
+                        android:textAlignment="center"
+                        android:textColor="@color/textColor"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tv_dds_dica"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/dica_diaria_de_seguranca"
+                        android:textAlignment="center"
+                        android:textColor="@color/textColor"
+                        android:textSize="16sp" />
+
+                    <Button
+                        android:id="@+id/btn_dds_dica"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn_cipa"
+                        android:text="@string/veja_outra_dica_de_seguranca"
+                        android:textColor="@color/textColor"
+                        android:layout_margin="10dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_cipa_descricao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/btn_cipa"
+                android:orientation="vertical"
+                android:padding="8dp"
+                app:layout_constraintBottom_toTopOf="@+id/iv_cipa_anexo_decreto"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_porque_cipamais_cipa_mais_I">
+
+                <WebView
+                    android:id="@+id/webv_dds_dica"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="6dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            app:layout_constraintBottom_toTopOf="@+id/ll_dds_design"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <Button
+                android:id="@+id/btn_dds_cadastrar"
+                style="@style/Button_Cipa_Menu_sw320dp"
+                android:layout_marginEnd="30dp"
+                android:text="@string/cadastrar" />
+
+            <Button
+                android:id="@+id/btn_dds_voltar"
+                style="@style/Button_Cipa_Menu_sw320dp"
+                android:layout_marginEnd="30dp"
+                android:text="@string/voltar" />
+
+            <Button
+                android:id="@+id/btn_dds_sair"
+                style="@style/Button_Cipa_Menu_sw320dp"
+                android:text="@string/sair" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_dds_design"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:id="@+id/tv_produtoByTechnet"
+                style="@style/by_technet" />
+
+            <TextView
+                android:id="@+id/tv_versao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/versao_1_0"
+                android:textAlignment="center"
+                android:textColor="@color/textColor"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

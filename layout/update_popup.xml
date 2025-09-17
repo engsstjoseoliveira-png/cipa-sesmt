@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@color/colorPrimary"
+        android:text="@string/pagina_de_cadastro_dos_membros_da_cipa"
+        android:textSize="22sp"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:text="@string/nome"
+        android:textColor="@color/textColor"
+        android:textSize="16sp"/>
+
+    <EditText
+        android:id="@+id/et_update_popup_nome"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/rounded"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:text="@string/presidencia"
+        android:textColor="@color/textColor"
+        android:textSize="16sp"/>
+
+    <EditText
+        android:id="@+id/et_update_popup_presidencia"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/rounded"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:text="@string/ocupacao"
+        android:textColor="@color/textColor"
+        android:textSize="16sp"/>
+
+    <EditText
+        android:id="@+id/et_update_popup_ocupacao"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/rounded"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:text="@string/posicao"
+        android:textColor="@color/textColor"
+        android:textSize="16sp"/>
+
+    <EditText
+        android:id="@+id/et_update_popup_posicao"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/rounded"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:text="@string/email"
+        android:textColor="@color/textColor"
+        android:textSize="16sp"/>
+
+    <EditText
+        android:id="@+id/et_update_popup_email"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/rounded"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:text="@string/gestao"
+        android:textColor="@color/textColor"
+        android:textSize="18sp"/>
+
+    <EditText
+        android:id="@+id/et_update_popup_gestao"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/rounded"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:text="@string/administrador"
+        android:textColor="@color/textColor"
+        android:textSize="18sp"/>
+
+    <EditText
+        android:id="@+id/et_update_popup_administrador"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/rounded"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:text="@string/foto"
+        android:textColor="@color/textColor"
+        android:textSize="18sp"/>
+
+    <EditText
+        android:id="@+id/et_update_popup_foto"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/rounded"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/btn_update_popup_cipeiros_atualizar"
+        style="@style/Button_Cipa_Menu_sw320dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:text="@string/atualizar" />
+
+</LinearLayout>

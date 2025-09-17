@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Home.Home">
+
+    <ImageView
+        android:id="@+id/iv_cipa_1"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="40dp"
+        android:transitionName="imagemProfile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cipa" />
+
+    <TextView
+        android:id="@+id/tv_home_cipa_mais"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textSize="36sp"
+        android:textColor="@color/textColor"
+        android:transitionName="textoProfile"
+        android:layout_marginTop="6dp"
+        app:layout_constraintEnd_toEndOf="@+id/iv_cipa_1"
+        app:layout_constraintStart_toStartOf="@+id/iv_cipa_1"
+        app:layout_constraintTop_toBottomOf="@+id/iv_cipa_1" />
+
+    <TextView
+        android:id="@+id/tv_home_cipa_mais_I"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="@string/texto_cipa"
+        android:textAlignment="center"
+        android:textColor="@color/textColor"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_home_cipa_mais"
+        app:layout_constraintStart_toStartOf="@+id/tv_home_cipa_mais"
+        app:layout_constraintTop_toBottomOf="@+id/tv_home_cipa_mais" />
+
+    <LinearLayout
+        android:id="@+id/ll_home_escolher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/bg_lista_usuarios"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/ll_home_design"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_home_cipa_mais_I">
+
+        <Button
+            android:id="@+id/btn_home_cadastrado"
+            style="@style/Button_home_sw320dp"
+            android:text="@string/ja_sou_cadastrado" />
+
+        <Button
+            android:id="@+id/btn_home_cadastrar"
+            style="@style/Button_home_sw320dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/quero_me_cadastrar" />
+
+        <Button
+            android:id="@+id/btn_home_visitante"
+            style="@style/Button_home_sw320dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/entrar_como_visitante" />
+
+        <Button
+            android:id="@+id/btn_home_sair"
+            style="@style/Button_home_sw320dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/sair" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_home_design"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/tv_produtoByTechnet"
+            style="@style/by_technet" />
+
+        <TextView
+            android:id="@+id/tv_versao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/versao_1_0"
+            android:textAlignment="center"
+            android:textColor="@color/textColor"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
